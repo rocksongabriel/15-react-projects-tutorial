@@ -1,13 +1,86 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow-x: hidden;
+}
+
+.box {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: rgb(105, 188, 255);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.container {
+  background-color: white;
+  width: 400px;
+  padding: 2em 1em;
+  border-radius: 0.5em;
+  box-shadow: 1px 1px 5px 1px rgb(80, 74, 74);
+}
+
+.container h3 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 1.5em;
+}
+
+.buttons {
+  margin-top: 1.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0.5em;
+  color: white;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+button:nth-child(1) {
+  background-color: rgb(236, 54, 54);
+}
+
+button:nth-child(2) {
+  background-color: rgb(46, 180, 46);
+}
+
+.person-card {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.person-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.person-card div {
+  margin-left: 20px;
+}
+
+.person-card div h4 {
+  color: rgb(80, 74, 74);
+}
+
+.person-card div p {
+  padding-top: 10px;
+  color: rgb(80, 74, 74);
 }
